@@ -1,0 +1,59 @@
+.footer {
+    grid-column: 1 / -1;
+    background-color: whitesmoke;
+}
+
+.footer-section {
+    border-top: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    padding: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+li:hover {
+    color: orange;
+}
+
+.telegram:hover {
+    color: rgb(0, 110, 255);
+}
+
+.whatsapp:hover {
+    color: green;
+}
+
+.youtube:hover {
+    color: red;
+}
+
+.footer-title , .copy-text {
+    color: orange;
+}
+
+.copy-right {
+    text-align: center;
+    font-size: 14px;
+    margin: 20px;
+}
+
+@media screen and (max-width:500px) {
+    .footer-section {
+        grid-template-columns: repeat(auto-fit , minmax(280px , 1fr));
+    }
+
+    ul {
+        margin-bottom: 10px;
+    }
+    
+}
