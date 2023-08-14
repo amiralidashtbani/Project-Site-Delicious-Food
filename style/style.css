@@ -322,9 +322,10 @@
 @media screen and (max-width:650px) {
     .section-gallery {
         grid-template-columns: repeat(2 , 1fr);
-        grid-template-rows: repeat(4 , 280px);
+        grid-template-rows: repeat(5 , 280px);
         grid-template-areas: "img1 img1"
-                             "img2 img3"
+                             "img2 img2"
+                             "img3 img3"
                              "img4 img4"
                              "img5 img5";
     }
